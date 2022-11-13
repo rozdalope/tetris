@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type='text/css'>
+    <script src='main.js' defer></script>
+    <title>Tetro Build</title>
+</head>
+
+<body>
+    <header><img src='assets/img/logo_cropped.png' width='450px' /></header>
+    <div class='subtitle'>
+        <div id='instructions'>HOW TO PLAY?</div>
+        <div id='hidden-p'>
+            <p id='paragraph'>Bring down the blocks from the top of the screen.
+                Move the blocks to the left using the left arrow key; move to the
+                right using the right arrow key; and up arrow key to rotate.
+                Blocks will not rotate on edge.</p>
+        </div>
+    </div>
+    <main class='game-area'>
+        <div class='container'>
+            <div class='playfield-container'>
+                <div class='left-edge'>
+                    <div class='no-bgcolor'></div>
+                    <div class='touch-left block3'></div>
+                    <div class='touch-left block3'></div>
+                    <div class='touch-left block3'></div>
+                    <div class='touch-left block3'></div>
+                    <div class='touch-left block3'></div>
+                    <div class='touch-left block3'></div>
+                    <div class='touch-left block3'></div>
+                    <div class='touch-left block3'></div>
+                    <div class='touch-left block3'></div>
+                    <div class='touch-left block3'></div>
+                    <div class='touch-left block3'></div>
+                    <div class='touch-left block3'></div>
+                    <div class='touch-left block3'></div>
+                    <div class='touch-left block3'></div>
+                    <div class='touch-left block3'></div>
+                    <div class='touch-left block3'></div>
+                    <div class='touch-left block3'></div>
+                    <div class='touch-left block3'></div>
+                    <div class='touch-left block3'></div>
+                    <div class='touch-left block3'></div>
+                    <div class='touch-left block3'></div>
+                </div>
+                <div class='playfield'>
+                    <div class='hidden'>
+                        <div class='game-over'></div>
+                        <div class='game-over'></div>
+                        <div class='game-over'></div>
+                        <div class='game-over'></div>
+                        <div class='game-over'></div>
+                        <div class='game-over'></div>
+                        <div class='game-over'></div>
+                        <div class='game-over'></div>
+                        <div class='game-over'></div>
+                        <div class='game-over'></div>
+                        <div class='game-over'></div>
+                        <div class='game-over'></div>
+                        <div class='game-over'></div>
+                    </div>
+                    <div class='grid'>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div class="block3"></div>
+                        <div class="block3"></div>
+                        <div class="block3"></div>
+                        <div class="block3"></div>
+                        <div class="block3"></div>
+                        <div class="block3"></div>
+                        <div class="block3"></div>
+                        <div class="block3"></div>
+                        <div class="block3"></div>
+                        <div class="block3"></div>
+                    </div>
+                </div>
+                <div class='right-edge'>
+                    <div class='no-bgcolor'></div>
+                    <div class='touch-right block3'></div>
+                    <div class='touch-right block3'></div>
+                    <div class='touch-right block3'></div>
+                    <div class='touch-right block3'></div>
+                    <div class='touch-right block3'></div>
+                    <div class='touch-right block3'></div>
+                    <div class='touch-right block3'></div>
+                    <div class='touch-right block3'></div>
+                    <div class='touch-right block3'></div>
+                    <div class='touch-right block3'></div>
+                    <div class='touch-right block3'></div>
+                    <div class='touch-right block3'></div>
+                    <div class='touch-right block3'></div>
+                    <div class='touch-right block3'></div>
+                    <div class='touch-right block3'></div>
+                    <div class='touch-right block3'></div>
+                    <div class='touch-right block3'></div>
+                    <div class='touch-right block3'></div>
+                    <div class='touch-right block3'></div>
+                    <div class='touch-right block3'></div>
+                    <div class='touch-right block3'></div>
+                </div>
+            </div>
+            <section>
+                <div class='display'>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <h1 class='your-score'>Your Score </h1>
+                    <span class="score score-display">0</span>
+                    <h2 class="lines-display">Lines Cleared: <span class='lines-score'>0</span></h2>
+                    <div class='previous-tetromino'>
+                        <div class='next'><b>Next</b> </div>
+                        <div class='mini-grid'>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class='button'>
+                    <button id='play-pause'>PLAY</button>
+                    <button id='new-game'>RESTART</button>
+                    <button id='quit'>QUIT</button>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>

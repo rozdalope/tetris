@@ -1,0 +1,369 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+    background: #11024b;
+    color: azure;
+
+    /* animated background */
+    z-index: 1;
+    background: linear-gradient(-45deg, #842f95, #253c71, #5f2586, #163b7c);
+    background-size: 400% 400%;
+    width: 100%;
+    height: 100vh;
+    animation: animate 15s ease infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.game-area {
+    display: flex;
+    align-items: center;
+}
+
+.grid {
+    width: 300px;
+    height: 600px;
+    background-color: #11024b;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.grid div {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #1e0d60;
+}
+
+.hidden {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+}
+
+.touch-right,
+.touch-left {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: #11024b;
+    border: 1px solid #1e0d60;
+    width: 30px;
+    height: 30px;
+}
+
+
+.no-bgcolor {
+    width: 30px;
+    height: 30px;
+    background-color: none;
+}
+
+section {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.playfield-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.playfield {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+.button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.score-display {
+    font-size: 3.3rem;
+}
+
+.block {
+    background-image: url(../assets/img/blue_block.png);
+    background-size: contain;
+}
+
+.block2 {
+    background-image: url(../assets/img/purple_block.png);
+    background-size: contain;
+}
+
+.block3 {
+    background-image: url(../assets/img/navy_block.png);
+    background-size: contain;
+}
+
+.block4 {
+    background-image: url(../assets/img/yellow_block.png);
+    background-size: contain;
+}
+
+.block5 {
+    background-image: url(../assets/img/pink_block.png);
+    background-size: contain;
+}
+
+.block6 {
+    background-image: url(../assets/img/yellow_block.png);
+    background-size: contain;
+}
+
+.mini-grid {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    background: #11024b;
+}
+
+.previous-tetromino {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.mini-grid div {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #1e0d60;
+
+}
+
+.subtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#hidden-p {
+    width: 580px;
+    font-size: 20px;
+    gap: 30px;
+    text-align: center;
+}
+
+button {
+    font-family: 'Poppins';
+    font-size: 23px;
+    padding: 0;
+    border: none;
+    background: none;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.next {
+    margin-bottom: 10px;
+}
+
+/* button hover */
+
+#play-pause:hover {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#new-game:hover {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+#quit:hover {
+    color: #e97a7a;
+    cursor: pointer;
+}
+
+#play-pause {
+    color: #7a9ce9;
+}
+
+#instructions {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #d4d5ff;
+}
+
+.subtitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#new-game {
+    color: #7aaee9;
+}
+
+#quit {
+    color: #637aae;
+}
+
+/* Media Query Mobile responsive*/
+
+@media only screen and (max-width: 767px) {
+
+    /* if the screen has width <= 767px*/
+
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        padding-top: 5px;
+    }
+
+    #instructions {
+        font-size: 20px;
+    }
+
+    #paragraph {
+        font-size: 16px;
+    }
+
+    img {
+        width: 275px;
+    }
+
+    #hidden-p {
+        width: auto;
+        padding: 0 15px;
+    }
+
+    .grid div {
+        width: 20px;
+        height: 20px;
+        border: 1px solid #1e0d60;
+    }
+
+    .grid {
+        width: 200px;
+        height: 400px;
+        background-color: #11024b;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .hidden {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 20px;
+        height: 20px;
+    }
+
+    .your-score,
+    .lines-display {
+        font-size: 18px;
+    }
+
+    .touch-right,
+    .touch-left {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        background-color: #11024b;
+        border: 1px solid #1e0d60;
+        width: 20px;
+        height: 20px;
+    }
+
+    .no-bgcolor {
+        width: 20px;
+        height: 20px;
+        background-color: none;
+    }
+
+    .mini-grid div {
+        width: 20px;
+        height: 20px;
+        border: 1px solid #1e0d60;
+    }
+
+    .mini-grid {
+        width: 80px;
+        height: 80px;
+        display: flex;
+        flex-wrap: wrap;
+        background: #11024b;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .score-display {
+        font-size: 1.8rem;
+    }
+}
