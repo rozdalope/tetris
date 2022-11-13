@@ -128,32 +128,32 @@ section {
 }
 
 .block {
-    background-image: url(../assets/img/blue_block.png);
+    background-image: url(./assets/img/blue_block.png);
     background-size: contain;
 }
 
 .block2 {
-    background-image: url(../assets/img/purple_block.png);
+    background-image: url(./assets/img/purple_block.png);
     background-size: contain;
 }
 
 .block3 {
-    background-image: url(../assets/img/navy_block.png);
+    background-image: url(./assets/img/navy_block.png);
     background-size: contain;
 }
 
 .block4 {
-    background-image: url(../assets/img/yellow_block.png);
+    background-image: url(./assets/img/yellow_block.png);
     background-size: contain;
 }
 
 .block5 {
-    background-image: url(../assets/img/pink_block.png);
+    background-image: url(./assets/img/pink_block.png);
     background-size: contain;
 }
 
 .block6 {
-    background-image: url(../assets/img/yellow_block.png);
+    background-image: url(./assets/img/yellow_block.png);
     background-size: contain;
 }
 
